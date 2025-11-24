@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Du Lịch Mạo Hiểm Việt Nam</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f8f8f8;
+}
+a { text-decoration: none; color: #2e7d32; }
+header { width: 100%; height: 420px; background: url("https://2saigon.vn/wp-content/uploads/2022/09/6-hoat-dong-du-lich-mao-hiem-pho-bien-tai-viet-nam_6323c6fa02223-scaled.jpeg") center/cover no-repeat; display: flex; align-items: center; justify-content: center; }
+header h1 { background: rgba(0,0,0,0.55); color: white; padding: 20px 40px; border-radius: 10px; font-size: 40px; text-align:center; }
+nav { background: #2e7d32; padding: 12px; text-align: center; }
+nav a { color: white; margin: 0 15px; font-weight: bold; }
+/* SECTION */
+section { padding: 40px; max-width: 1000px; margin: 30px auto; background: white; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+h2 { color: #2e7d32; border-left: 5px solid #2e7d32; padding-left: 12px; margin-bottom:20px; }
+h3 { color:#2e7d32; margin-top:10px; }
+p, li { color:#555; }
+ul { padding-left: 20px; }
+/* TABLE */
+table { width:100%; border-collapse: collapse; margin-top:15px; }
+table th, table td { border:1px solid #ccc; padding:12px; background:#fafafa; }
+table th { background:#2e7d32; color:white; }
+/* FORM */
+form { display:flex; flex-direction:column; gap:12px; margin-top:20px; }
+input, select, textarea { padding:12px; border:1px solid #ccc; border-radius:6px; font-size:16px; width:100%; }
+button { padding:14px; background:#2e7d32; border:none; color:white; font-size:18px; border-radius:6px; cursor:pointer; font-weight:bold; }
+button:hover { background:#256628; }
+/* FOOTER */
+footer { text-align:center; padding:30px; background:#2e7d32; color:white; margin-top:40px; }
+footer img { width:120px; margin-bottom:10px; }
+/* SLIDER TOUR */
+.slider-container {
+  overflow-x: auto;
+  display: flex;
+  gap: 25px;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+.tour-card {
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 2px 12px rgba(0,0,0,0.15);
+  transition:0.25s;
+}
+.tour-card:hover { transform:translateY(-6px); box-shadow:0 6px 16px rgba(0,0,0,0.2); }
+.tour-card img { width:100%; height:220px; object-fit:cover; }
+.tour-card .desc { padding:0 20px; color:#555; }
+.tour-card .price { padding:10px 20px; font-weight:bold; color:#2e7d32; font-size:18px; }
+.tour-card .activities { padding:0 20px 20px 20px; margin-top:10px; color:#333; }
+.success-box { text-align:center; padding:60px; margin-top:30px; background:#dff0d8; color:#3c763d; border-radius:10px; display:none; }
+/* MOBILE */
+@media(max-width:768px){
+  .tour-card { flex:0 0 90%; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Du Lịch Mạo Hiểm Việt Nam</h1>
+</header>
+
+<nav>
+<a href="#home">Trang chủ</a>
+<a href="#tours">Tour</a>
+<a href="#form">Đặt Tour</a>
+<a href="#contact">Liên hệ</a>
+</nav>
+
+<section id="home">
+<h2>Giới Thiệu Natural Travel Việt Nam</h2>
+<p>Chúng tôi là công ty du lịch mạo hiểm hàng đầu tại Việt Nam, chuyên tổ chức các chuyến đi khám phá thiên nhiên hoang sơ và đầy thách thức. Thành lập từ năm 2010, chúng tôi đã phục vụ hàng nghìn du khách với sứ mệnh mang đến những trải nghiệm độc đáo, giúp mọi người kết nối sâu sắc với thiên nhiên và vượt qua giới hạn bản thân.</p>
+</section>
+
+<section id="tours">
+<h2>Các Tour Mạo Hiểm Nổi Bật</h2>
+<div class="slider-container">
+
+
+<div class="tour-card">
+<img src="https://media1.thrillophilia.com/filestore/qtekq3wecfm5qeq32c9h4xkx4fvb_Fansipan-Mountain-09_1682416088.jpg" alt="Tour Leo Núi Fansipan">
+<h3>Tour Leo Núi Fansipan</h3>
+<p class="desc">Chinh phục đỉnh núi cao nhất Đông Dương, trải nghiệm trekking và cắm trại qua đêm.</p>
+<p class="price">Giá: 7,000,000 VNĐ/Người</p>
+<ul class="activities">
+<li>• Trekking đường dốc</li>
+<li>• Cắm trại qua đêm</li>
+<li>• Ngắm mây và bình minh</li>
+</ul>
+</div>
+
+
+<div class="tour-card">
+<img src="https://tse1.mm.bing.net/th/id/OIP.dzrDEMiFjY9m0046FmDrsQHaFj?rs=1&pid=ImgDetMain&o=7&rm=3"" alt="Tour Trekking Sapa">
+<h3>Tour Trekking Sapa</h3>
+<p class="desc">Khám phá ruộng bậc thang, bản làng dân tộc và trải nghiệm homestay.</p>
+<p class="price">Giá: 3,500,000 VNĐ/Người</p>
+<ul class="activities">
+<li>• Đi bộ đường mòn</li>
+<li>• Thăm bản làng</li>
+<li>• Thưởng thức ẩm thực địa phương</li>
+<li>• Nghỉ homestay</li>
+</ul>
+</div>
+
+
+<div class="tour-card">
+<img src=" https://tse4.mm.bing.net/th/id/OIP.CIKl1WfSj3SgF-SW09vtnQHaEm?rs=1&pid=ImgDetMain&o=7&rm=3lt="Tour Lặn Biển Phú Quốc">
+<h3>Tour Lặn Biển Phú Quốc</h3>
+<p class="desc">Khám phá rạn san hô, bãi biển trắng và các hoạt động lặn biển.</p>
+<p class="price">Giá: 4,200,000 VNĐ/Người</p>
+<ul class="activities">
+<li>• Lặn với bình dưỡng khí</li>
+<li>• Tham quan đáy biển</li>
+<li>• Thư giãn trên bãi biển</li>
+</ul>
+</div>
+
+
+<div class="tour-card">
+<img src="https://tse2.mm.bing.net/th/id/OIP.-eVAMTLNLIvFxfLWmFUdXwHaE8?rs=1&pid=ImgDetMain&o=7&rm=3"Tour Hang Sơn Đoòng">
+<h3>Tour Thám Hiểm Hang Sơn Đoòng</h3>
+<p class="desc">Khám phá hang động lớn nhất thế giới với sông ngầm và rừng nhiệt đới.</p>
+<p class="price">Giá: 6,000,000 VNĐ/Người</p>
+<ul class="activities">
+<li>• Đi bộ & thuyền trong hang</li>
+<li>• Cắm trại trong hang</li>
+<li>• Quan sát hệ sinh thái độc đáo</li>
+</ul>
+</div>
+
+
+<div class="tour-card">
+<img src="https://tse3.mm.bing.net/th/id/OIP.mQ52qh5CDfxRKpUTB05CjQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3="Tour Bungee Đà Lạt">
+<h3>Tour Bungee Jumping Đà Lạt</h3>
+<p class="desc">Nhảy bungee từ cầu treo, trekking rừng thông và thưởng thức cà phê.</p>
+<p class="price">Giá: 5,500,000 VNĐ/Người</p>
+<ul class="activities">
+<li>• Nhảy bungee</li>
+<li>• Trekking rừng thông</li>
+<li>• Thưởng thức cà phê địa phương</li>
+</ul>
+</div>
+
+
+</div>
+</section>
+
+<section>
+<h2>Những Đồ Dùng Cần Mang Theo</h2>
+<table>
+<tr><th>Danh mục</th><th>Mô tả</th></tr>
+<tr><td>Trang phục phù hợp</td><td>Quần áo thoáng mát, giày trekking, áo khoác nhẹ.</td></tr>
+<tr><td>Đồ ăn</td><td>Nước uống, snack, thực phẩm nhanh.</td></tr>
+<tr><td>Thuốc</td><td>Thuốc cảm, đau bụng, băng cá nhân.</td></tr>
+<tr><td>Đồ cắm trại</td><td>Lều, túi ngủ, đèn pin.</td></tr>
+</table>
+</section>
+
+<section id="form">
+<h2>Đặt Tour Ngay</h2>
+<form action="https://formsubmit.co/YOUR_EMAIL@gmail.com" method="POST">
+<input type="hidden" name="_subject" value="Có khách đặt tour!">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="#success">
+
+<input type="text" name="Họ tên" placeholder="Họ và tên" required>
+<input type="text" name="Số điện thoại" placeholder="Số điện thoại" required>
+<input type="email" name="Email" placeholder="Email" required>
+<input type="number" name="Số lượng người" placeholder="Số người tham gia" required>
+
+<label>Chọn thời gian tham gia tour:</label>
+<select name="Thời gian">
+<option value="Trong ngày">Trong ngày</option>
+<option value="2N1Đ">2N1Đ</option>
+<option value="3N2Đ">3N2Đ</option>
+<option value="4N3Đ">4N3Đ</option>
+<option value="5N4Đ">5N4Đ</option>
+</select>
+
+<label>Phương thức thanh toán:</label>
+<select name="Thanh toán">
+<option value="Chuyển khoản">Chuyển khoản</option>
+</select>
+
+<button type="submit">Gửi Đặt Tour</button>
+</form>
+
+<div class="success-box" id="success">
+<h2>Gửi thông tin thành công!</h2>
+<p>Chúng tôi sẽ liên hệ với bạn sớm nhất.</p>
+</div>
+</section>
+
+<footer id="contact">
+<p><b>Hotline:</b> 0901 234 567</p>
+<p><b>Email:</b> Naturaltravelvn@gmail.com</p>
+<p><b>Địa chỉ:</b>Đường Du Lịch, Quận 9, TP. HCM</p>
+<p>© 2025 Natural Travel Việt Nam</p>
+</footer>
+
+</body>
+</html>
